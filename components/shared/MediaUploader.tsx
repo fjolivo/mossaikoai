@@ -53,7 +53,7 @@ const MediaUploader = ({
 
   return (
     <CldUploadWidget
-      uploadPreset="mosssaikoai"
+      uploadPreset="mossaikoai"
       options={{
         multiple: false,
         resourceType: "image",
