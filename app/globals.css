@@ -299,11 +299,11 @@
   }
 
   /* Navbar Component */
-  .header {
+  .mobile_header {
     @apply flex-between fixed h-16 w-full border-b-4 border-purple-100 bg-white p-5 lg:hidden;
   }
 
-  .header-nav_elements {
+  .mobile_header-nav_elements {
     @apply mt-8 flex w-full flex-col items-start gap-5;
   }
 

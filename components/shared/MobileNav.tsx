@@ -12,7 +12,7 @@ const MobileNav = () => {
   const pathname = usePathname();
 
   return (
-    <header className="header">
+    <div className="mobile_header">
       <Link href="/" className="flex items-center gap-2 md:py-2">
         <Image
           src="/assets/images/logo-text.svg"
@@ -45,7 +45,7 @@ const MobileNav = () => {
                   height={23}
                 />
 
-              <ul className="header-nav_elements">
+              <ul className="mobile_header-nav_elements">
               {navLinks.map((link) => {
                 const isActive = link.route === pathname
 
@@ -78,7 +78,7 @@ const MobileNav = () => {
             </Button>
           </SignedOut>
       </nav>
-    </header>
+    </div>
   )
 }
 
