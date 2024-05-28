@@ -11,7 +11,7 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="sidebar">
+    <header className="sidebar">
       <div className="flex flex-row gap-4">
         <Link href="/" className="sidebar-logo">
           <Image src="/assets/images/logo-text.svg" alt="logo" width={180} height={28} />
@@ -78,7 +78,7 @@ const Sidebar = () => {
           </SignedOut>
         </nav>
       </div>
-    </aside>
+    </header>
   )
 }
 
