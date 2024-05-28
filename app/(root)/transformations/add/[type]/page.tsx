@@ -1,4 +1,4 @@
-import Header from '@/components/shared/Header'
+import FormHeader from '@/components/shared/FormHeader'
 import TransformationForm from '@/components/shared/TransformationForm';
 import { transformationTypes } from '@/constants'
 import { getUserById } from '@/lib/actions/user.actions';
@@ -15,7 +15,7 @@ const AddTransformationTypePage = async ({ params: { type } }: SearchParamProps)
 
   return (
     <>
-      <Header 
+      <FormHeader 
         title={transformation.title}
         subtitle={transformation.subTitle}
       />

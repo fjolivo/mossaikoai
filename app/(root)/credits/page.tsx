@@ -2,7 +2,7 @@ import { SignedIn, auth } from "@clerk/nextjs";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 
-import Header from "@/components/shared/Header";
+import FormHeader from "@/components/shared/FormHeader";
 import { Button } from "@/components/ui/button";
 import { plans } from "@/constants";
 import { getUserById } from "@/lib/actions/user.actions";
@@ -17,7 +17,7 @@ const Credits = async () => {
 
   return (
     <>
-      <Header
+      <FormHeader
         title="Buy Credits"
         subtitle="Choose a credit package that suits your needs!"
       />

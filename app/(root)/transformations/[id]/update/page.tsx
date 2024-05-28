@@ -1,7 +1,7 @@
 import { auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
-import Header from "@/components/shared/Header";
+import FormHeader from "@/components/shared/FormHeader";
 import TransformationForm from "@/components/shared/TransformationForm";
 import { transformationTypes } from "@/constants";
 import { getUserById } from "@/lib/actions/user.actions";
@@ -20,7 +20,7 @@ const Page = async ({ params: { id } }: SearchParamProps) => {
 
   return (
     <>
-      <Header title={transformation.title} subtitle={transformation.subTitle} />
+      <FormHeader title={transformation.title} subtitle={transformation.subTitle} />
 
       <section className="mt-10">
         <TransformationForm

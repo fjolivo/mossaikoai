@@ -3,7 +3,7 @@ import Image from "next/image";
 import { redirect } from "next/navigation";
 
 import { Collection } from "@/components/shared/Collection";
-import Header from "@/components/shared/Header";
+import FormHeader from "@/components/shared/FormHeader";
 import { getUserImages } from "@/lib/actions/image.actions";
 import { getUserById } from "@/lib/actions/user.actions";
 
@@ -18,7 +18,7 @@ const Profile = async ({ searchParams }: SearchParamProps) => {
 
   return (
     <>
-      <Header title="Profile" />
+      <FormHeader title="Profile" />
 
       <section className="profile">
         <div className="profile-balance">

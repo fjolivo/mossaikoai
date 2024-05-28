@@ -2,7 +2,7 @@ import { auth } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 
-import Header from "@/components/shared/Header";
+import FormHeader from "@/components/shared/FormHeader";
 import TransformedImage from "@/components/shared/TransformedImage";
 import { Button } from "@/components/ui/button";
 import { getImageById } from "@/lib/actions/image.actions";
@@ -16,7 +16,7 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
 
   return (
     <>
-      <Header title={image.title} />
+      <FormHeader title={image.title} />
 
       <section className="mt-5 flex flex-wrap gap-4">
         <div className="p-14-medium md:p-16-medium flex gap-2">

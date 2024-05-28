@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = ({ title, subtitle }: { title: string, subtitle?: string }) => {
+const FormHeader = ({ title, subtitle }: { title: string, subtitle?: string }) => {
   return (
     <>
       <h2 className="h2-bold text-dark-600">{title}</h2>
@@ -9,4 +9,4 @@ const Header = ({ title, subtitle }: { title: string, subtitle?: string }) => {
   )
 }
 
-export default Header
+export default FormHeader
