@@ -80,7 +80,9 @@
 }
 
 .root {
-  @apply flex min-h-screen w-full flex-col bg-white lg:flex-row;
+  /* @apply flex min-h-screen w-full flex-col bg-white lg:flex-row; */
+  @apply min-h-screen w-full flex-col bg-white ;
+
 }
 
 .root-container {
@@ -314,7 +316,7 @@
   .sidebar {
     /* @apply hidden h-screen w-72 bg-white p-5 shadow-md shadow-purple-200/50 lg:flex;
      */
-     @apply hidden w-screen  bg-white p-5 shadow-md shadow-purple-200/50 lg:flex;
+     @apply bg-white p-5 ;
 
   }
 
@@ -323,7 +325,9 @@
   }
 
   .sidebar-nav {
-    @apply h-full flex-col justify-between md:flex md:gap-4;
+    /* @apply h-full flex-col justify-between md:flex md:gap-4; */
+    @apply justify-between flex-row w-full;
+
   }
 
   .sidebar-nav_elements {
