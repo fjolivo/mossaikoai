@@ -19,6 +19,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <main className="root">
+      <div className="absolute inset-0 -z-20 bg-orange-50 " aria-hidden="true"></div> 
+
       <div
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"
@@ -36,17 +38,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           }}
         />
       </div>
-      
 
       <Sidebar />
       <MobileNav />
 
       <div className="root-container">
-        <div className="wrapper">
-          {children}
-        </div>
+        <div className="wrapper">{children}</div>
       </div>
-      
+
       <Toaster />
     </main>
   )
