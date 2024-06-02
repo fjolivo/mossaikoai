@@ -14,7 +14,7 @@ const Sidebar = () => {
     <header className="sidebar">
       <div className="flex flex-row gap-4">
         <Link href="/" className="sidebar-logo">
-          <Image src="/assets/images/logo-text.svg" alt="logo" width={180} height={28} />
+          <Image src="/assets/images/logo-text.svg" alt="logo" width={360} height={56}  />
         </Link>
 
         <nav className="sidebar-nav">
