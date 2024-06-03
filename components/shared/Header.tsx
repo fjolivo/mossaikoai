@@ -13,9 +13,9 @@ const Header = () => {
   return (
     <header className="header shadow-2xl">
         <div className="header-container">
-            <div className=" flex flex-row gap-4 items-center">
+            <div className=" flex flex-row gap-4 items-center w-full">
                 <Link href="/" className="header-logo">
-                    <Image src="/assets/images/logo-text.svg" alt="logo" width={300} height={200}  />
+                    <Image src="/assets/images/logo-text.svg" alt="logo" width={700} height={200}/>
                 </Link>
 
                 <nav className="header-nav">
@@ -76,9 +76,11 @@ const Header = () => {
 
 
                     <SignedOut>
-                        <Button asChild className="button bg-purple-gradient bg-cover max-w-xs flex justify-end ">
+                        <div className="justify-end">
+                        <Button asChild className="button flex bg-purple-gradient bg-cover w-52 mr-8">
                             <Link href="/sign-in">Login</Link>
                         </Button>
+                        </div>
                     </SignedOut>
                 </nav>
             </div>

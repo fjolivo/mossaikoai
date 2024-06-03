@@ -76,7 +76,7 @@
 }
 
 .auth {
-  @apply flex-center min-h-screen w-full bg-purple-100
+  @apply flex-center min-h-screen w-full bg-purple-100;
 }
 
 .root {
@@ -86,7 +86,7 @@
 }
 
 .root-container {
-  @apply mt-16 flex-1 overflow-auto py-8 lg:mt-0 lg:max-h-screen lg:py-10
+  @apply mt-16 flex-1 overflow-auto py-8 lg:mt-0 lg:max-h-screen lg:py-10;
 }
 
 /* ========================================== TAILWIND STYLES */
@@ -222,7 +222,8 @@
 
   /* Home Page */
   .home {
-    @apply sm:flex-center hidden h-72 flex-col gap-4 rounded-[20px] border bg-banner bg-cover bg-no-repeat p-10 shadow-inner;
+    @apply sm:flex-center hidden h-72 flex-col gap-4 rounded-[20px] bg-banner bg-cover bg-no-repeat p-10;
+    /* @apply sm:flex-center hidden h-72 flex-col gap-4 rounded-[20px] border bg-[#b06f3d83] bg-cover bg-no-repeat p-10 shadow-2xl; */
   }
 
   .home-heading {
@@ -316,7 +317,7 @@
   .header {
     /* @apply hidden h-screen w-72 bg-white p-5 shadow-md shadow-purple-200/50 lg:flex;
      */
-     @apply w-full p-5 bg-[#fffaf8] items-center;
+     @apply w-full p-5 bg-[#fffaf8];
 
   }
 
@@ -325,17 +326,17 @@
   }
 
   .header-logo {
-    @apply relative gap-2 mx-10 md:py-2 ;
+    @apply flex items-center justify-start gap-2 mx-10 md:py-2 ;
   }
 
   .header-nav {
     /* @apply h-full flex-col justify-between md:flex md:gap-4; */
-    @apply justify-between flex-row w-full items-center;
+    @apply flex-row w-full flex items-center justify-end;
 
   }
 
   .header-nav_elements {
-    @apply hidden w-full flex-row items-start gap-2 md:flex;
+    @apply hidden w-full flex-row gap-2 items-center md:flex;
   }
 
   .header-nav_element {
