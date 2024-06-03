@@ -54,7 +54,7 @@ const MobileNav = () => {
                     className={`${isActive && 'gradient-text'} p-18 flex whitespace-nowrap text-dark-700`}
                     key={link.route}
                     >
-                    <Link className="sidebar-link cursor-pointer" href={link.route}>
+                    <Link className="header-link cursor-pointer" href={link.route}>
                       <Image 
                         src={link.icon}
                         alt="logo"
