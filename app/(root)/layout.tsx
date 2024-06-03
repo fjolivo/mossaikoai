@@ -1,5 +1,5 @@
 import MobileNav from '@/components/shared/MobileNav'
-import Sidebar from '@/components/shared/Header'
+import Header from '@/components/shared/Header'
 import { Toaster } from '@/components/ui/toaster'
 
 const generateRandomPolygon = () => {
@@ -19,6 +19,15 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <main className="root">
+
+      <Header />
+      <MobileNav />
+
+      <div className="root-container">
+        <div className="wrapper">{children}</div>
+      </div>
+
+      <Toaster />
       <div className="absolute inset-0 -z-20 bg-orange-20 " aria-hidden="true"></div> 
 
       <div
@@ -38,15 +47,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           }}
         />
       </div>
-
-      <Sidebar />
-      <MobileNav />
-
-      <div className="root-container">
-        <div className="wrapper">{children}</div>
-      </div>
-
-      <Toaster />
     </main>
   )
 }

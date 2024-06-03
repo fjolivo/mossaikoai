@@ -7,27 +7,27 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Button } from '../ui/button'
 
-const Sidebar = () => {
+const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="sidebar">
+    <header className="header">
       <div className="flex flex-row gap-4">
-        <Link href="/" className="sidebar-logo">
+        <Link href="/" className="header-logo">
           <Image src="/assets/images/logo-text.svg" alt="logo" width={360} height={56}  />
         </Link>
 
-        <nav className="sidebar-nav">
+        <nav className="header-nav">
           <SignedIn>
-            <ul className="sidebar-nav_elements">
+            <ul className="header-nav_elements">
               {navLinks.slice(0, 5).map((link) => {
                 const isActive = link.route === pathname
 
                 return (
-                  <li key={link.route} className={`sidebar-nav_element group ${
+                  <li key={link.route} className={`header-nav_element group ${
                     isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
                   }`}>
-                    <Link className="sidebar-link" href={link.route}>
+                    <Link className="header-link" href={link.route}>
                       <Image 
                         src={link.icon}
                         alt="logo"
@@ -43,15 +43,15 @@ const Sidebar = () => {
               </ul>
 
 
-            {/* <ul className="sidebar-nav_elements">
+            {/* <ul className="header-nav_elements">
               {navLinks.slice(6).map((link) => {
                 const isActive = link.route === pathname
 
                 return (
-                  <li key={link.route} className={`sidebar-nav_element group ${
+                  <li key={link.route} className={`header-nav_element group ${
                     isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
                   }`}>
-                    <Link className="sidebar-link" href={link.route}>
+                    <Link className="header-link" href={link.route}>
                       <Image 
                         src={link.icon}
                         alt="logo"
@@ -85,4 +85,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default Header
