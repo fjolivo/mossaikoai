@@ -11,7 +11,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="header shadow-2xl">
+    <header className="header shadow-xl shadow-orange-50">
         <div className="header-container">
             <div className=" flex flex-row gap-4 items-center w-full">
                 <Link href="/" className="header-logo">
