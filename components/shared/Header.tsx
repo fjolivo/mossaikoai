@@ -11,11 +11,10 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="header shadow-xl shadow-orange-50">
+    <header className="header">
         <div className="header-container">
-            <div className=" flex flex-row gap-4 items-center w-full">
                 <Link href="/" className="header-logo">
-                    <Image src="/assets/images/logo-text.svg" alt="logo" width={700} height={200}/>
+                    <Image src="/assets/images/logo-text.svg" alt="logo" width={450} height={67.3}/>
                 </Link>
 
                 <nav className="header-nav">
@@ -26,7 +25,7 @@ const Header = () => {
 
                             return (
                             <li key={link.route} className={`header-nav_element group ${
-                                isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
+                                isActive ? 'bg-purple-gradient text-white p-2' : 'text-black p-1'
                             }`}>
                                 <Link className="header-link" href={link.route}>
                                     <Image 
@@ -44,7 +43,7 @@ const Header = () => {
                         </ul>
 
 
-                        <ul className="header-nav_elements">
+                        {/* <ul className="header-nav_elements">
                         {navLinks.slice(6).map((link) => {
                             const isActive = link.route === pathname
 
@@ -69,7 +68,7 @@ const Header = () => {
                         <li className="flex-center cursor-pointer gap-2 p-4">
                             <UserButton afterSignOutUrl='/' showName />
                         </li>
-                        </ul>
+                        </ul> */}
                     </SignedIn>
 
 
@@ -83,7 +82,6 @@ const Header = () => {
                         </div>
                     </SignedOut>
                 </nav>
-            </div>
         </div>
     </header>
   )

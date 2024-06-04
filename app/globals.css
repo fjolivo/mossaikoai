@@ -315,33 +315,33 @@
 
   /* Header Component */
   .header {
-     @apply flex justify-center w-full p-5 bg-[#fffaf8];
+     @apply flex justify-center w-full py-6 bg-[#fffaf8] shadow-xl shadow-orange-50;
   }
 
   .header-container {
-    @apply max-w-6xl mr-4 h-20 flex;
+    @apply flex w-full max-w-6xl ;
   }
 
   .header-logo {
-    @apply flex items-center justify-start mx-10 md:py-2 ;
+    @apply flex-none justify-start;
   }
 
   .header-nav {
     /* @apply h-full flex-col justify-between md:flex md:gap-4; */
-    @apply flex-row w-full flex items-center justify-end;
+    @apply w-full flex pl-16;
 
   }
 
   .header-nav_elements {
-    @apply hidden w-full flex-row gap-1 items-center md:flex;
+    @apply hidden w-full gap-1 flex-row items-center justify-end md:flex;
   }
 
   .header-nav_element {
-    @apply flex flex-center p-16-semibold w-full whitespace-nowrap rounded-full bg-cover transition-all hover:bg-purple-100 hover:shadow-inner;
+    @apply flex flex-center p-16-medium w-full whitespace-nowrap rounded-full bg-cover transition-all hover:bg-purple-100 hover:shadow-inner;
   }
 
   .header-link {
-    @apply text-base flex mr-4 gap-1 p-3;
+    @apply flex mr-4 gap-2;
   }
 
   /* TransformationForm Component */

@@ -1,9 +1,9 @@
 <svg width="576" height="131" viewBox="0 0 576 131" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="576" height="131" fill="url(#grad1)"/>
     <defs>
-        <radialGradient id="grad1" cx="0%" cy="100%" gradientUnits="userSpaceOnUse">
+        <radialGradient id="grad1" cx="10%" cy="10%" gradientUnits="userSpaceOnUse">
             <stop offset="0"  stop-color="#9999cc"/>
-            <stop offset="0.7" stop-color="#333366"/>
+            <stop offset="0.5" stop-color="#333366"/>
             <stop offset="1" stop-color="#333366"/>
         </radialGradient>
     </defs>
