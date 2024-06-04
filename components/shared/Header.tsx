@@ -29,14 +29,14 @@ const Header = () => {
                                 isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
                             }`}>
                                 <Link className="header-link" href={link.route}>
-                                <Image 
-                                    src={link.icon}
-                                    alt="logo"
-                                    width={24}
-                                    height={24}
-                                    className={`${isActive && 'brightness-200'}`}
-                                />
-                                {link.label}
+                                    <Image 
+                                        src={link.icon}
+                                        alt="logo"
+                                        width={14}
+                                        height={14}
+                                        className={`${isActive && 'brightness-200'}`}
+                                    />
+                                    {link.label}
                                 </Link>
                             </li>
                             )
