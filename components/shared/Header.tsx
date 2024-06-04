@@ -44,7 +44,7 @@ const Header = () => {
                         </ul>
 
 
-                        {/* <ul className="header-nav_elements">
+                        <ul className="header-nav_elements">
                         {navLinks.slice(6).map((link) => {
                             const isActive = link.route === pathname
 
@@ -69,7 +69,7 @@ const Header = () => {
                         <li className="flex-center cursor-pointer gap-2 p-4">
                             <UserButton afterSignOutUrl='/' showName />
                         </li>
-                        </ul> */}
+                        </ul>
                     </SignedIn>
 
 

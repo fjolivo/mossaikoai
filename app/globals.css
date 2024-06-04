@@ -344,7 +344,7 @@
   }
 
   .header-link {
-    @apply p-16-semibold flex mr-4 gap-1 p-4;
+    @apply text-base flex mr-4 gap-1 p-3;
   }
 
   /* TransformationForm Component */
