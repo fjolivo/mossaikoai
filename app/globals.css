@@ -344,6 +344,14 @@
     @apply flex mr-4 gap-2;
   }
 
+  /* Footer Component */
+  .header {
+    @apply flex justify-center w-full py-6 bg-[#fffaf8] shadow-xl shadow-orange-50;
+  }
+
+
+  
+
   /* TransformationForm Component */
   .prompt-field {
     @apply flex flex-col gap-5 lg:flex-row lg:gap-10;
