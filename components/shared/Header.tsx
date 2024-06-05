@@ -25,7 +25,7 @@ const Header = () => {
 
                             return (
                             <li key={link.route} className={`header-nav_element group ${
-                                isActive ? ' text-indigo-900' : 'text-indigo-900 p-1 opacity-70 hover:opacity-100'
+                                isActive ? 'underline underline-offset-2 text-indigo-900' : 'text-indigo-900 p-1 opacity-70 hover:opacity-100'
                                 // isActive ? 'bg-purple-gradient text-white p-2' : 'text-black p-1'
                                 // isActive ? 'bg-[#2646bc5d] text-black p-2' : 'text-black p-1'
                             }`}>
@@ -33,9 +33,9 @@ const Header = () => {
                                     <Image 
                                         src={link.icon}
                                         alt="logo"
-                                        width={14}
-                                        height={14}
-                                        className={`${isActive && 'animate-bounce'}`}
+                                        width={15}
+                                        height={15}
+                                        className={`${isActive && 'animate-custom-pulse'}`}
                                     />
                                     {link.label}
                                 </Link>

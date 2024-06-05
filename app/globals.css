@@ -384,6 +384,19 @@
   }
 }
 
+@keyframes custom-pulse {
+  0%, 50%, 100% {
+    opacity: 0.8; /* Increase this value to increase the minimum opacity */
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+}
+
+.animate-custom-pulse {
+  animation: custom-pulse 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
 /* =====  CLERK OVERRIDES */
 .cl-userButtonBox {
   display: flex;
