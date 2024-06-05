@@ -1,6 +1,7 @@
 import MobileNav from '@/components/shared/MobileNav'
 import Header from '@/components/shared/Header'
 import { Toaster } from '@/components/ui/toaster'
+import Footer from '@/components/shared/Footer';
 
 const generateRandomPolygon = () => {
   const now = new Date();
@@ -28,6 +29,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </div>
 
       <Toaster />
+
+      <Footer />
 
 
       <div
