@@ -345,12 +345,15 @@
   }
 
   /* Footer Component */
-  .header {
+  .footer {
+    @apply flex xl:justify-center w-full py-6 bg-[#fffaf8] shadow-xl shadow-orange-50;
+  }
+
+  .footer-container {
     @apply flex justify-center w-full py-6 bg-[#fffaf8] shadow-xl shadow-orange-50;
   }
 
 
-  
 
   /* TransformationForm Component */
   .prompt-field {

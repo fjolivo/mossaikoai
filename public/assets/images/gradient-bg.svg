@@ -2,9 +2,9 @@
     <rect width="576" height="131" fill="url(#grad1)"/>
     <defs>
         <radialGradient id="grad1" cx="10%" cy="10%" gradientUnits="userSpaceOnUse">
-            <stop offset="0"  stop-color="#9999cc"/>
-            <stop offset="0.5" stop-color="#333366"/>
-            <stop offset="1" stop-color="#333366"/>
+            <stop offset="0"  stop-color="#9999cc00"/>
+            <stop offset="0.3" stop-color="#33336622"/>
+            <stop offset="1" stop-color="#33336622"/>
         </radialGradient>
     </defs>
 </svg>

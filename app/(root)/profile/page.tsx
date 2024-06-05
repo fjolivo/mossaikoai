@@ -1,4 +1,4 @@
-import { auth } from "@clerk/nextjs";
+import { auth, UserButton, UserProfile } from "@clerk/nextjs";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 
@@ -34,6 +34,7 @@ const Profile = async ({ searchParams }: SearchParamProps) => {
             <h2 className="h2-bold text-dark-600">{user.creditBalance}</h2>
           </div>
         </div>
+        
 
         <div className="profile-image-manipulation">
           <p className="p-14-medium md:p-16-medium">IMAGE MANIPULATION DONE</p>
@@ -49,6 +50,11 @@ const Profile = async ({ searchParams }: SearchParamProps) => {
           </div>
         </div>
       </section>
+
+      <div className="flex flex-col mt-4 mb-10">
+        <h3 className="justify-center h2-bold text-dark-600 mb-8 mt-10">Clerk Profile</h3>
+        <UserButton afterSignOutUrl="/" showName/> 
+      </div>
 
       <section className="mt-8 md:mt-14">
         <Collection

@@ -14,7 +14,7 @@ const Header = () => {
     <header className="header">
         <div className="header-container">
                 <Link href="/" className="header-logo">
-                    <Image src="/assets/images/logo-text.svg" alt="logo" width={450} height={67.3}/>
+                    <Image src="/assets/images/logo-text.svg" alt="logo" width={300} height={67.3}/>
                 </Link>
 
                 <nav className="header-nav">
@@ -25,7 +25,9 @@ const Header = () => {
 
                             return (
                             <li key={link.route} className={`header-nav_element group ${
-                                isActive ? 'bg-purple-gradient text-white p-2' : 'text-black p-1'
+                                isActive ? 'bg-purple-gradient p-1' : 'text-black p-1'
+                                // isActive ? 'bg-purple-gradient text-white p-2' : 'text-black p-1'
+                                // isActive ? 'bg-[#2646bc5d] text-black p-2' : 'text-black p-1'
                             }`}>
                                 <Link className="header-link" href={link.route}>
                                     <Image 
@@ -33,7 +35,7 @@ const Header = () => {
                                         alt="logo"
                                         width={14}
                                         height={14}
-                                        className={`${isActive && 'brightness-200'}`}
+                                        // className={`${isActive && 'brightness-200'}`}
                                     />
                                     {link.label}
                                 </Link>
@@ -75,8 +77,8 @@ const Header = () => {
 
 
                     <SignedOut>
-                        <div className="justify-end">
-                        <Button asChild className="button flex bg-purple-gradient bg-cover w-52 mr-8">
+                        <div className="flex w-full justify-end">
+                        <Button asChild className="button flex bg-gradient-to-r from-[#333366] via-[#333366] via-80% to-[#ff3300] w-52 mr-8">
                             <Link href="/sign-in">Login</Link>
                         </Button>
                         </div>
