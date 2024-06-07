@@ -81,12 +81,12 @@
 
 .root {
   /* @apply flex min-h-screen w-full flex-col bg-white lg:flex-row; */
-  @apply min-h-screen w-full flex-col;
+  @apply w-full flex-col;
 
 }
 
 .root-container {
-  @apply mt-16 flex-1 overflow-auto py-8 lg:mt-0 lg:max-h-screen lg:py-10;
+  @apply mt-16 flex-1 min-h-screen overflow-auto py-8 lg:mt-0 lg:max-h-screen lg:py-10;
 }
 
 /* ========================================== TAILWIND STYLES */
@@ -321,7 +321,7 @@
 
   /* Header Component */
   .header {
-     @apply flex justify-center w-full py-6 bg-[#fffaf8] shadow-xl shadow-orange-50;
+     @apply flex justify-center w-full py-10 bg-[#fffaf8] shadow-xl shadow-orange-50;
   }
 
   .header-container {
@@ -353,27 +353,27 @@
   /* Footer Component */
   .footer {
     /* @apply flex xl:justify-center w-full py-6 bg-[#fffaf8] shadow-xl shadow-orange-50; */
-    @apply flex w-full py-6;
+    @apply flex w-full max-w-7xl p-8 bg-indigo-300 bg-opacity-5;
   }
 
   .footer-container {
-    @apply flex w-full py-2;
+    @apply flex w-full;
   }
-
+  
   .footer-copyright {
-    @apply flex justify-start w-full px-6 text-sm items-center;
+    @apply flex justify-start w-full text-sm items-center;
   }
 
   .footer-transformations {
-    @apply flex justify-end w-full px-6 text-sm flex-col;
+    @apply flex justify-end w-min text-sm flex-col;
   }
 
   .footer-nav_element {
-    @apply flex justify-end p-16-semibold whitespace-nowrap transition-all;
+    @apply flex justify-start text-[10px] whitespace-nowrap items-center text-indigo-900 px-2;
   }
 
   .footer-profile {
-    @apply flex justify-end w-full px-6 text-sm;
+    @apply flex justify-end text-[11px] whitespace-nowrap items-center text-indigo-900;
   }
 
 
