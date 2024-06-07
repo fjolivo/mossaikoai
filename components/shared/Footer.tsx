@@ -13,9 +13,10 @@ const Footer = () => {
   return (
     <header className="footer">
         <div className="footer-container">
-            <div>                
+            <div className="footer-copyright">
+            © 2024 Mossaiko AI. All rights reserved.
             </div> 
-            <div>
+            <div className="footer-transformations">
             <SignedIn>
                 <ul>
                 {navLinks.slice(1, 4).map((link) => {
@@ -30,7 +31,7 @@ const Footer = () => {
                 </ul>
             </SignedIn>
             </div>
-            <div>
+            <div className="footer-profile">
             <SignedIn>
                 <ul>
                 {navLinks.slice(4, 6).map((link) => {
