@@ -365,7 +365,11 @@
   }
 
   .footer-transformations {
-    @apply flex justify-end w-full px-6 text-sm;
+    @apply flex justify-end w-full px-6 text-sm flex-col;
+  }
+
+  .footer-nav_element {
+    @apply flex justify-end p-16-semibold whitespace-nowrap transition-all;
   }
 
   .footer-profile {

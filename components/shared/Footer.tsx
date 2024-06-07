@@ -17,11 +17,12 @@ const Footer = () => {
             © 2024 Mossaiko AI. All rights reserved.
             </div> 
             <div className="footer-transformations">
+                <h3>Transformations</h3>
             <SignedIn>
                 <ul>
                 {navLinks.slice(1, 4).map((link) => {
                     return (
-                    <li key={link.route} className={`header-nav_element group`}>
+                    <li key={link.route} className={`footer-nav_element`}>
                         <Link className="header-link" href={link.route}>
                             {link.label}
                         </Link>
