@@ -354,11 +354,22 @@
   .footer {
     /* @apply flex xl:justify-center w-full py-6 bg-[#fffaf8] shadow-xl shadow-orange-50; */
     @apply flex w-full py-6;
-
   }
 
   .footer-container {
-    @apply flex justify-end w-full py-6;
+    @apply flex w-full py-2;
+  }
+
+  .footer-copyright {
+    @apply flex justify-start w-full px-6 text-sm;
+  }
+
+  .footer-transformations {
+    @apply flex justify-end w-full px-6 text-sm;
+  }
+
+  .footer-profile {
+    @apply flex justify-end w-full px-6 text-sm;
   }
 
 
