@@ -361,7 +361,7 @@
   }
 
   .footer-copyright {
-    @apply flex justify-start w-full px-6 text-sm;
+    @apply flex justify-start w-full px-6 text-sm items-center;
   }
 
   .footer-transformations {
