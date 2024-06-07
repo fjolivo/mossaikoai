@@ -25,9 +25,7 @@ const Header = () => {
 
                             return (
                             <li key={link.route} className={`header-nav_element group ${
-                                isActive ? 'underline underline-offset-2 text-indigo-900' : 'text-indigo-900 p-1 opacity-70 hover:opacity-100'
-                                // isActive ? 'bg-purple-gradient text-white p-2' : 'text-black p-1'
-                                // isActive ? 'bg-[#2646bc5d] text-black p-2' : 'text-black p-1'
+                                isActive ? 'underline underline-offset-4 text-indigo-900' : 'text-indigo-900 p-1 opacity-70 hover:opacity-100'
                             }`}>
                                 <Link className="header-link" href={link.route}>
                                     <Image 
@@ -44,33 +42,6 @@ const Header = () => {
                         })}
                         </ul>
 
-
-                        {/* <ul className="header-nav_elements">
-                        {navLinks.slice(6).map((link) => {
-                            const isActive = link.route === pathname
-
-                            return (
-                            <li key={link.route} className={`header-nav_element group ${
-                                isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
-                            }`}>
-                                <Link className="header-link" href={link.route}>
-                                <Image 
-                                    src={link.icon}
-                                    alt="logo"
-                                    width={24}
-                                    height={24}
-                                    className={`${isActive && 'brightness-200'}`}
-                                />
-                                {link.label}
-                                </Link>
-                            </li>
-                            )
-                        })}
-
-                        <li className="flex-center cursor-pointer gap-2 p-4">
-                            <UserButton afterSignOutUrl='/' showName />
-                        </li>
-                        </ul> */}
                     </SignedIn>
 
 

@@ -13,9 +13,38 @@ const Footer = () => {
   return (
     <header className="footer">
         <div className="footer-container">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>                
+            </div> 
+            <div>
+            <SignedIn>
+                <ul>
+                {navLinks.slice(1, 4).map((link) => {
+                    return (
+                    <li key={link.route} className={`header-nav_element group`}>
+                        <Link className="header-link" href={link.route}>
+                            {link.label}
+                        </Link>
+                    </li>
+                    )
+                })}
+                </ul>
+            </SignedIn>
+            </div>
+            <div>
+            <SignedIn>
+                <ul>
+                {navLinks.slice(4, 6).map((link) => {
+                    return (
+                    <li key={link.route} className={`header-nav_element group`}>
+                        <Link className="header-link" href={link.route}>
+                            {link.label}
+                        </Link>
+                    </li>
+                    )
+                })}
+                </ul>
+            </SignedIn>
+            </div>
 
                 {/* <Link href="/" className="header-logo">
                     <Image src="/assets/images/logo-text.svg" alt="logo" width={450} height={67.3}/>

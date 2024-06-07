@@ -222,8 +222,14 @@
 
   /* Home Page */
   .home {
-    @apply sm:flex-center hidden h-72 flex-col gap-4 rounded-[20px] bg-banner bg-cover bg-no-repeat p-10;
+    @apply sm:flex-center hidden h-80 flex-col gap-4 rounded-[20px] bg-cover bg-no-repeat p-10 bg-gradient-bg;
     /* @apply sm:flex-center hidden h-72 flex-col gap-4 rounded-[20px] border bg-[#b06f3d83] bg-cover bg-no-repeat p-10 shadow-2xl; */
+  }
+
+  .bg-gradient-bg {
+    background: linear-gradient(-45deg, #ff000099, #7b0e3699, #1f055e99, #b31e0799);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
   }
 
   .home-heading {
@@ -323,7 +329,7 @@
   }
 
   .header-logo {
-    @apply flex-none justify-start;
+    @apply pl-8 flex-none justify-start;
   }
 
   .header-nav {
@@ -347,12 +353,12 @@
   /* Footer Component */
   .footer {
     /* @apply flex xl:justify-center w-full py-6 bg-[#fffaf8] shadow-xl shadow-orange-50; */
-    @apply flex xl:justify-center w-full py-6 bg-[#000000];
+    @apply flex w-full py-6;
 
   }
 
   .footer-container {
-    @apply flex justify-center w-full py-6 bg-[#777777] ;
+    @apply flex justify-end w-full py-6;
   }
 
 
@@ -386,10 +392,22 @@
 
 @keyframes custom-pulse {
   0%, 50%, 100% {
-    opacity: 0.8; /* Increase this value to increase the minimum opacity */
+    opacity: 0.8; 
   }
   25%, 75% {
     opacity: 1;
+  }
+}
+
+@keyframes gradient {  /* Home Gradient Animation */
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
