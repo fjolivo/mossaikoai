@@ -37,7 +37,7 @@ const Footer = () => {
                 <ul>
                 {navLinks.slice(4, 6).map((link) => {
                     return (
-                    <li key={link.route} className={`header-nav_element group`}>
+                    <li key={link.route} className={`footer-nav_element group`}>
                         <Link className="header-link" href={link.route}>
                             {link.label}
                         </Link>
