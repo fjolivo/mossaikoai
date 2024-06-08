@@ -353,11 +353,11 @@
   /* Footer Component */
   .footer {
     /* @apply flex xl:justify-center w-full py-6 bg-[#fffaf8] shadow-xl shadow-orange-50; */
-    @apply flex w-full max-w-7xl p-8 bg-indigo-300 bg-opacity-5;
+    @apply flex w-full bg-indigo-300 bg-opacity-5 justify-center;
   }
 
   .footer-container {
-    @apply flex w-full;
+    @apply flex w-full max-w-7xl m-8;
   }
   
   .footer-copyright {
