@@ -86,7 +86,7 @@
 }
 
 .root-container {
-  @apply my-4 flex-1 min-h-screen py-8 lg:max-h-screen lg:py-10;
+  @apply my-4 flex-1 py-8 lg:py-10 min-h-screen;
 }
 
 /* ========================================== TAILWIND STYLES */
@@ -353,7 +353,7 @@
   /* Footer Component */
   .footer {
     /* @apply flex xl:justify-center w-full py-6 bg-[#fffaf8] shadow-xl shadow-orange-50; */
-    @apply flex w-full bg-indigo-300 bg-opacity-5 justify-center;
+    @apply relative z-10 flex w-full bg-indigo-300 bg-opacity-5 justify-center;
   }
 
   .footer-container {

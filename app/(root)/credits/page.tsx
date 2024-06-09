@@ -55,20 +55,14 @@ const Credits = async () => {
                 ))}
               </ul>
 
-              {plan.name === "Free" ? (
-                <Button variant="outline" className="credits-btn">
-                  Free Consumable
-                </Button>
-              ) : (
-                <SignedIn>
-                  <Checkout
-                    plan={plan.name}
-                    amount={plan.price}
-                    credits={plan.credits}
-                    buyerId={user._id}
-                  />
-                </SignedIn>
-              )}
+              <SignedIn>
+                <Checkout
+                  plan={plan.name}
+                  amount={plan.price}
+                  credits={plan.credits}
+                  buyerId={user._id}
+                />
+              </SignedIn>
             </li>
           ))}
         </ul>

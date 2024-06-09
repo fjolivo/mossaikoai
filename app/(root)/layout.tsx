@@ -34,7 +34,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
 
       <div
-        className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-xl sm:-top-80"
+        className="inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-xl sm:-top-80 fixed"
         aria-hidden="true"
       >
         <div

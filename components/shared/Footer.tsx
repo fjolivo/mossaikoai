@@ -11,7 +11,7 @@ const Footer = () => {
   const pathname = usePathname();
 
   return (
-    <header className="footer">
+    <footer className="footer">
         <div className="footer-container">
             <div className="footer-copyright">
             © 2024 Mossaiko AI. All rights reserved.
@@ -117,7 +117,7 @@ const Footer = () => {
                     </SignedOut>
                 </nav> */}
         </div>
-    </header>
+    </footer>
   )
 }
 

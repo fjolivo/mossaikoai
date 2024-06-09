@@ -1,3 +1,4 @@
+
 import { auth, UserButton, UserProfile } from "@clerk/nextjs";
 import Image from "next/image";
 import { redirect } from "next/navigation";
@@ -6,6 +7,8 @@ import { Collection } from "@/components/shared/Collection";
 import FormHeader from "@/components/shared/FormHeader";
 import { getUserImages } from "@/lib/actions/image.actions";
 import { getUserById } from "@/lib/actions/user.actions";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Profile = async ({ searchParams }: SearchParamProps) => {
   const page = Number(searchParams?.page) || 1;
@@ -51,6 +54,20 @@ const Profile = async ({ searchParams }: SearchParamProps) => {
         </div>
       </section>
 
+
+      <div className="flex items-center justify-center relative w-full group mt-6 ">
+            <div className="flex mr-auto ml-auto absolute -inset-0.5 bg-gradient-to-r from-indigo-900 to-red-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt max-w-xl"></div>
+            <Button 
+              type="submit"
+              className="flex justify-center h-min submit-button capitalize group-hover:text-red-100 transition max-w-xl duration-1000"
+            >
+              <Link className="flex justify-center m-2 text-xl" href="credits">
+                Buy Credits
+              </Link>
+            </Button>
+          </div>
+
+                        
       <div className="flex flex-col mt-4 mb-10">
         <h3 className="justify-center h2-bold text-dark-600 mb-8 mt-10">Clerk Profile</h3>
         <UserButton afterSignOutUrl="/" showName/> 
