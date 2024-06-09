@@ -304,7 +304,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
           </Button>
 
           <div className="relative group">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-900 to-red-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 "></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-900 to-red-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
             <Button 
               type="submit"
               className="submit-button capitalize group-hover:text-red-100 transition duration-1000"
