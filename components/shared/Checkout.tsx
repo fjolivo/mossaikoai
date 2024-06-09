@@ -60,11 +60,12 @@ const Checkout = ({
 
   return (
     <form action={onCheckout} method="POST">
-      <section>
+      <section className="flex relative group">
+      <div className="flex absolute -inset-0.5 bg-gradient-to-r from-indigo-900 to-red-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt w-52 mr-auto ml-auto"></div>
         <Button
           type="submit"
           role="link"
-          className="w-full rounded-full bg-purple-gradient bg-cover"
+          className="w-full button relative group-hover:text-red-100 transition max-w-xl duration-1000"
         >
           Buy Credit
         </Button>

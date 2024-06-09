@@ -48,12 +48,12 @@ const Header = () => {
 
 
                     <SignedOut>
-                        {/* <div className="flex relative group w-full justify-end">
-                            <div className="flex absolute -inset-0.5 bg-gradient-to-r from-indigo-900 to-red-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt w-52 mr-8"></div>
-                            <Button asChild className="flex relative w-52 mr-8">
+                        <div className="flex relative group w-full justify-end">
+                            <div className="flex absolute -inset-0.5 bg-gradient-to-r from-indigo-900 to-red-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt w-52 mr-8 ml-auto"></div>
+                            <Button asChild className="button relative flex w-52 mr-8 group-hover:text-red-100 transition max-w-xl duration-1000">
                                 <Link href="/sign-in">Login</Link>
                             </Button>
-                        </div> */}
+                        </div>
                     </SignedOut>
                 </nav>
         </div>
