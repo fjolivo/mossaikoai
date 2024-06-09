@@ -86,7 +86,7 @@
 }
 
 .root-container {
-  @apply mt-16 flex-1 min-h-screen overflow-auto py-8 lg:mt-0 lg:max-h-screen lg:py-10;
+  @apply my-4 flex-1 min-h-screen py-8 lg:max-h-screen lg:py-10;
 }
 
 /* ========================================== TAILWIND STYLES */
@@ -222,7 +222,7 @@
 
   /* Home Page */
   .home {
-    @apply sm:flex-center hidden h-80 flex-col gap-4 rounded-[20px] bg-cover bg-no-repeat p-10 bg-gradient-bg;
+    @apply flex-center h-80 flex-col gap-4 rounded-[20px] bg-cover bg-no-repeat p-10 bg-gradient-bg;
     /* @apply sm:flex-center hidden h-72 flex-col gap-4 rounded-[20px] border bg-[#b06f3d83] bg-cover bg-no-repeat p-10 shadow-2xl; */
   }
 
@@ -307,7 +307,7 @@
 
   /* Navbar Component */
   .mobile_header {
-    @apply flex-between flex w-full bg-[#fffaf8] shadow-xl shadow-orange-50 p-5 xl2:hidden;
+    @apply flex-between flex w-full bg-[#fffaf8] shadow-xl shadow-orange-50 p-4 xl2:hidden;
   }
 
   .mobile_header-nav_elements {

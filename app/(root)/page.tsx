@@ -16,7 +16,7 @@ const Home = async ({ searchParams }: SearchParamProps) => {
         <h1 className="home-heading">
           Experience the Future of Image Editing
         </h1>
-        <ul className="flex-center w-full gap-20">
+        <ul className="flex-between w-full max-w-xl ">
           {navLinks.slice(1, 4).map((link) => (
             <Link
               key={link.route}
@@ -32,7 +32,7 @@ const Home = async ({ searchParams }: SearchParamProps) => {
         </ul>
       </section>
 
-      <section className="sm:mt-12">
+      <section className="mt-12">
         <Collection 
           hasSearch={true}
           images={images?.data}
