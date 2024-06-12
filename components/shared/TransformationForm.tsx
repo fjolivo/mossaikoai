@@ -293,26 +293,29 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
           />
         </div>
 
-        <div className="relative group">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-900 to-red-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-          <Button 
-            type="button"
-            className="submit-button capitalize  group-hover:text-red-100 transition duration-1000"
-            disabled={isTransforming || newTransformation === null}
-            onClick={onTransformHandler}
-          >
-            {isTransforming ? 'Transforming...' : 'Apply Transformation'}
-          </Button>
+        <div className="flex flex-col gap-4">
 
           <div className="relative group">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-900 to-red-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
             <Button 
-              type="submit"
-              className="submit-button capitalize group-hover:text-red-100 transition duration-1000"
-              disabled={isSubmitting}
+              type="button"
+              className="submit-button capitalize  group-hover:text-red-100 transition duration-1000"
+              disabled={isTransforming || newTransformation === null}
+              onClick={onTransformHandler}
             >
-              {isSubmitting ? 'Submitting...' : 'Save Image'}
+              {isTransforming ? 'Transforming...' : 'Apply Transformation'}
             </Button>
+          </div>
+
+          <div className="relative group">
+            <div className="absolute bg-gradient-to-r from-indigo-900 to-red-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+              <Button 
+                type="submit"
+                className="submit-button capitalize group-hover:text-red-100 transition duration-1000"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? 'Submitting...' : 'Save Image'}
+              </Button>
           </div>
         </div>
       </form>
